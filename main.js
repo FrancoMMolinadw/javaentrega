@@ -11,13 +11,8 @@ while(numero < 1000){
     }
 }*/
 
-//2 entrega / 3 entrega (array)
-
-
-
-
-
-
+//2 entrega 
+/*
 let ingresarTipo = prompt('Coloque el tipo de COMBUSTIBLE que quiere repostar. \nPresione: \n 1-Gasolina 98 1.85€ L \n 2-Gasolina 95 1.70€ L \n 3-Gasoleo A 1.89€ L  \n 4-Gasoleo B 1.80€ L  ');
 let montoCarga = prompt('Ingrese el monto que desea cargar');
 let gasolina98 = 1.85
@@ -38,7 +33,7 @@ function agregarCarga() {
 
             alert('monto carga ' + montoCarga + '€')
 
-            alert('Total a pagar :' + (gasolina98 * montoCarga) + ' €');
+            alert('Total a pagar :' + parseFloat(gasolina98 * montoCarga) + ' €');
 
         }else if(ingresarTipo == 2){
 
@@ -46,7 +41,7 @@ function agregarCarga() {
 
             alert('monto carga ' + montoCarga + '€');
 
-            alert('Total a pagar :' + (gasolina95 * montoCarga) + '€');
+            alert('Total a pagar :' + parseFloat(gasolina95 * montoCarga) + '€');
 
         }else if(ingresarTipo== 3){
 
@@ -54,7 +49,7 @@ function agregarCarga() {
 
             alert('monto carga ' + montoCarga + '€');
 
-            alert('Total a pagar :' + (gasoleoA * montoCarga) + '€');
+            alert('Total a pagar :' + parseFloat(gasoleoA * montoCarga) + '€');
 
         }else if(ingresarTipo == 4){
 
@@ -62,7 +57,7 @@ function agregarCarga() {
 
             alert('monto carga ' + montoCarga + '€');
 
-            alert('Total a pagar :' + (gasoleoB * montoCarga) + '€');
+            alert('Total a pagar :' + parseFloat(gasoleoB * montoCarga) + '€');
 
         }else{  (ingresarTipo != 1 || ingresarTipo != 2 || ingresarTipo != 3 || ingresarTipo != 4 )
 
@@ -71,7 +66,7 @@ function agregarCarga() {
 
         }
 
-        ingresarMonto = prompt('Marque la opcion \n 5-Pagar\n 0-Cancelar')
+         let ingresarMonto = prompt('Marque la opcion \n 5-Pagar\n 0-Cancelar')
 
         if( ingresarMonto == pagar ) {
             alert(' Procesando el pago');
@@ -87,12 +82,12 @@ function agregarCarga() {
 
 }
  
-agregarCarga()
-
-// funcion que ejecute los descuentos 
+agregarCarga()*/
 
 
+// 3 entrega (array)
 
+/*
 // APLICACION DE DESSCUENTO DEL ESTADO.
 const descuento = 0.20;
 
@@ -114,9 +109,8 @@ class Producto {
         combustibles.push(this);
     }
 
-    apliDescuento() {
-        this.precio = this.precio - descuento;
-        
+    restarDescuento(){
+         this. precio = this.precio - 0.20; 
     }
 
     vender() {
@@ -127,7 +121,7 @@ class Producto {
 }
 
 //CORROBORA SI EL ARRAY SE ESTA COMPLETANDO
-console.log(combustibles)
+console.log(combustibles);
 
 
 
@@ -137,14 +131,16 @@ const producto2= new Producto ('gasolina95', 1.87 );
 const producto3= new Producto ('gasoleoA', 1.89 );
 const producto4= new Producto ('gasoleoB', 1.85 );
 
-//APLICAR DESCENTO AL PRODUCTO
-producto1.apliDescuento();
-producto2.apliDescuento();
-producto3.apliDescuento();
-producto4.apliDescuento();
-
 //VER LOS DATOS DEL PRODUCTO
 console.log(producto1);
-console.log(producto2)
-console.log(producto3)
-console.log(producto4)
+console.log(producto2);
+console.log(producto3);
+console.log(producto4);
+
+//APLICAR DESCUENTO AL PRODUCTO
+producto1.restarDescuento();
+producto2.restarDescuento();
+producto3.restarDescuento();
+producto4.restarDescuento();
+
+console.log(combustibles[0].nombre);*/
