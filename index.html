@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaFrancoMolina</title>
-    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AppFrancoMolina</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <link rel="stylesheet" href="estilos.css" />
 </head>
+
 <body>
-    <h1>Mi titulo</h1>
-    <p>Mi parrafo</p>
-    <h2 id="miConsola">Titulos</h2>
-    <script src="array.js"></script>
-    
+   
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">  F M Controlador de stock </a>
+    </nav>
+
+    <div class="container">
+        
+        <div id="App" class="row pt-5">
+           
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Agregar Producto</h4>
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nombre" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="detail" placeholder="Detalle" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="price" step="0.10" placeholder="Precio Producto"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="quantity" step="1" placeholder="Cantidad" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="year" 
+                                class="form-control" />
+                        </div>
+                        <input type="submit" value="Agregar" class="btn btn-primary btn-block" />
+                    </form>
+                </div>
+            </div>
+
+            <!-- lista productos -->
+            <div id="product-list" class="col-md-8"></div>
+        </div>
+    </div>
+
+    <script src="/javascript/stock.js"></script>
 </body>
 
 </html>
