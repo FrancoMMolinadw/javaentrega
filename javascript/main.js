@@ -144,3 +144,4 @@ producto3.restarDescuento();
 producto4.restarDescuento();
 
 console.log(combustibles[0].nombre);*/
+
